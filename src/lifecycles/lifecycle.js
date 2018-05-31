@@ -12,6 +12,11 @@ class Lifecycle extends Component {
   componentDidMount() {
     console.log('componentDidMount ---> no arguments')
   }
+  static getDerivedStateFromProps(nextProps, prevState) {
+    console.log('getDerivedStateFromProps ---> nextProps = ', nextProps, ' prevState = ', prevState);
+    // return nextProps
+  }
+
   componentWillReceiveProps(nextProps) {
     console.log('componentWillReceiveProps ---> ', nextProps)
   }
