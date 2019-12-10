@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './lifecycles';
+import Lifecycle from './lifecycles';
+import Lazyload from './lazyload'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Lazyload />, document.getElementById('root'));
